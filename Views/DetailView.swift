@@ -10,7 +10,6 @@ import SwiftUI
 struct DetailView: View {
     
     // MARK: - Properties
-    
     let book:Book
     @Environment(\.managedObjectContext) var moc
     @Environment(\.dismiss) var dismiss

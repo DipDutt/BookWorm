@@ -28,7 +28,7 @@ struct BookView: View {
     var body: some View {
         Form {
             Section("Add Details📋") {
-                TextField("Name Of The", text:$titleOfTheBook)
+                TextField("Name Of The Book", text:$titleOfTheBook)
                 TextField("Author Name", text:$authorName)
                 Picker("Genre", selection:$selectGenere) {
                     ForEach(genreType, id:\.self) {
