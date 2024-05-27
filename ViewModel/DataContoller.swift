@@ -12,13 +12,13 @@ import CoreData
 
 class DataController:ObservableObject {
     
-    let persistancecontainer = NSPersistentContainer(name:"BookWorm")
+    let persistanceContainer = NSPersistentContainer(name:"BookWorm")
     
     // MARK: - Create init to load CoreDataModel
     
     init() {
         
-        persistancecontainer.loadPersistentStores { description, error in
+        persistanceContainer.loadPersistentStores { description, error in
             if let error = error {
                 print("Error Loadig core Data:\(error.localizedDescription)")
             }
