@@ -46,18 +46,12 @@ struct ContentView: View {
                         .onDelete(perform: deleteItem)
                     }
                 }
-                
-                
-                
             }
-            
             .navigationTitle("BookWorm📖")
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     EditButton()
                 }
-                
-                
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
                         isShowSheeet = true
@@ -66,9 +60,7 @@ struct ContentView: View {
                             .imageScale(.large)
                     }
                 }
-                
             }
-            
         }
         
         // MARK: - Present Sheet
